@@ -1,0 +1,14 @@
+{
+  "name": "runwaystock-marketplace",
+  "description": "Marketplace for runwaystock, which finds what to reorder from sales and stock files.",
+  "owner": {
+    "name": "Giulliano Macedo"
+  },
+  "plugins": [
+    {
+      "name": "runwaystock",
+      "source": "./plugin",
+      "description": "Finds what to reorder, stockout dates and dead stock from sales and stock CSVs, on your machine."
+    }
+  ]
+}

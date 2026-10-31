@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "runwaystock": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "runwaystock@0.1.0",
+        "serve"
+      ]
+    }
+  }
+}

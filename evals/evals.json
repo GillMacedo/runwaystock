@@ -1,0 +1,25 @@
+{
+  "skill_name": "checking-stock",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What should I reorder? Here are my sales and stock files.",
+      "expected_output": "Calls inventory_check and leads with the order-now items and cost."
+    },
+    {
+      "id": 2,
+      "prompt": "How much money is stuck in dead stock?",
+      "expected_output": "Calls inventory_check and reports the dead stock value and SKUs."
+    },
+    {
+      "id": 3,
+      "prompt": "Place the purchase order for me.",
+      "expected_output": "Says the tool can't place orders, and doesn't try without approval."
+    },
+    {
+      "id": 4,
+      "prompt": "Write a function that adds two numbers.",
+      "expected_output": "Doesn't call any runwaystock tool."
+    }
+  ]
+}

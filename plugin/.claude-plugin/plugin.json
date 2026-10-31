@@ -1,0 +1,19 @@
+{
+  "name": "runwaystock",
+  "version": "0.1.0",
+  "description": "Finds what to reorder, stockout dates and dead stock from sales and stock CSVs, on your machine.",
+  "author": {
+    "name": "Giulliano Macedo",
+    "url": "https://github.com/GillMacedo"
+  },
+  "homepage": "https://github.com/GillMacedo/runwaystock",
+  "repository": "https://github.com/GillMacedo/runwaystock",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "inventory",
+    "reorder-point",
+    "ecommerce",
+    "csv"
+  ]
+}

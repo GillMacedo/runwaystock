@@ -1,0 +1,32 @@
+{
+  "name": "runwaystock",
+  "version": "0.1.0",
+  "description": "Inventory reorder points from sales and stock CSVs: what to reorder, how much, stockout dates and dead stock. MCP server and CLI; your data stays on your machine.",
+  "license": "MIT",
+  "author": "Giulliano Macedo (https://github.com/GillMacedo)",
+  "homepage": "https://github.com/GillMacedo/runwaystock",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GillMacedo/runwaystock.git"
+  },
+  "mcpName": "io.github.GillMacedo/runwaystock",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "claude",
+    "inventory",
+    "reorder-point",
+    "safety-stock",
+    "stockout",
+    "ecommerce",
+    "small-business",
+    "csv"
+  ],
+  "bin": {
+    "runwaystock": "npm/bin.js"
+  },
+  "files": [
+    "npm/bin.js",
+    "npm/bin"
+  ]
+}
