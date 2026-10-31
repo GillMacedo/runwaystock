@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">runwaystock</title>
+  <rect width="512" height="512" rx="96" fill="#123c35"/>
+  <path d="M104 388h304" fill="none" stroke="#e5f4ec" stroke-linecap="round" stroke-width="18"/>
+  <rect x="132" y="296" width="64" height="92" rx="16" fill="#9de7bd"/>
+  <rect x="224" y="244" width="64" height="144" rx="16" fill="#9de7bd"/>
+  <rect x="316" y="184" width="64" height="204" rx="16" fill="#9de7bd"/>
+  <path d="m126 224 104-58 89 35 77-82" fill="none" stroke="#f2dc70" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+  <path d="M350 119h46v46" fill="none" stroke="#f2dc70" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+</svg>

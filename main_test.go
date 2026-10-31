@@ -4,7 +4,9 @@ import (
 	"bytes"
 	"context"
 	"encoding/json"
+	"encoding/xml"
 	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 
@@ -14,6 +16,32 @@ import (
 
 const salesFile = "examples/sales.csv"
 const stockFile = "examples/stock.csv"
+
+func TestPluginIconIsBundled(t *testing.T) {
+	manifestData, err := os.ReadFile("plugin/.claude-plugin/plugin.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	var manifest struct {
+		Icon string `json:"icon"`
+	}
+	if err := json.Unmarshal(manifestData, &manifest); err != nil {
+		t.Fatal(err)
+	}
+	if manifest.Icon == "" || filepath.IsAbs(manifest.Icon) {
+		t.Fatalf("expected a relative plugin icon path, got %q", manifest.Icon)
+	}
+	iconData, err := os.ReadFile(filepath.Join("plugin", manifest.Icon))
+	if err != nil {
+		t.Fatalf("read plugin icon %q: %v", manifest.Icon, err)
+	}
+	var icon struct {
+		XMLName xml.Name `xml:"svg"`
+	}
+	if err := xml.Unmarshal(iconData, &icon); err != nil {
+		t.Fatalf("parse plugin icon %q: %v", manifest.Icon, err)
+	}
+}
 
 func TestCheckPrints(t *testing.T) {
 	var out, errs bytes.Buffer

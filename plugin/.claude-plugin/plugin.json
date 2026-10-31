@@ -15,5 +15,6 @@
     "reorder-point",
     "ecommerce",
     "csv"
-  ]
+  ],
+  "icon": "./icon.svg"
 }
