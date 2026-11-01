@@ -24,4 +24,4 @@ Works out what to reorder from sales and stock CSVs. It's a Go MCP server and CL
 - Never write to stdout in server code, because it corrupts JSON-RPC.
 
 ## Definition of done
-Tests pass, the README example matches, and `CHANGELOG.md` and `ROADMAP.md` are updated if relevant.
+Tests pass, the README example matches, and `ROADMAP.md` is updated if relevant.
