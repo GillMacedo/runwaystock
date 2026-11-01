@@ -15,7 +15,7 @@ import (
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
-const version = "0.1.0"
+const version = "0.2.0"
 
 const usage = `Usage:
   runwaystock check <sales.csv> <stock.csv>   Work out what to reorder
